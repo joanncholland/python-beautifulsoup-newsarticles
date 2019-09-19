@@ -2,14 +2,6 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-from tkinter import *
-
-root = Tk()
-
-introduction = "This program scrapes the Guardian's Health and Wellbeing page, so you can glance through for articles of interest."
-
-w = Label(root, text=introduction)
-w.config(bg='white', font=('times', 24))
 
 # Get health and wellness page
 page = requests.get(
